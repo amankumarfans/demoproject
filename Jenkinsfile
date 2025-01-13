@@ -2,10 +2,10 @@ pipeline{
     agent { label 'dev-server' }
     
     stages{
-        stage("Code Clone"){
+        stage("Code Clone")
             steps{
                 echo "Code Clone Stage"
-                git url: "https://github.com/LondheShubham153/node-todo-cicd.git", branch: "master"
+                git url: "https://github.com/amankumarfans/demoproject.git", branch: "master"
             }
         }
         stage("Code Build & Test"){
